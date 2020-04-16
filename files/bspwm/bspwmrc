@@ -1,0 +1,50 @@
+#! /bin/sh
+
+cd "$(dirname $0)"
+
+
+pkill -x bspc  # Ensure all bspc commands have stopped
+
+
+bspc monitor DVI-D-0 -d 1 2 3 4 5
+bspc monitor DP-1    -d 6 7 8 9 0
+
+bspc config focus_follows_pointer true
+bspc config focus_follows_monitor true
+bspc config pointer_follows_focus false
+
+bspc config border_width         1
+bspc config window_gap           0
+
+bspc config focused_border_color '#AAAAAA'
+bspc config active_border_color  '#000000'
+bspc config normal_border_color  '#000000'
+
+
+# Window Rules
+
+bspc rule --add feh state=floating center
+bspc config external_rules_command "$PWD/external_rules_command.sh"
+
+
+# Start Related Programs
+
+feh --bg-fill --no-fehbg --no-xinerama "$HOME/.config/bg.jpg"
+
+pkill -x sxhkd
+sxhkd &
+
+pkill -x lemonbar
+python3 "$HOME/.config/lemonbar/bar.py"
+
+
+# Make sure Lemonbar sits under full screen windows
+bspc subscribe node_state | while read _ _ _ _ state flag; do
+	if [[ $state == fullscreen ]]; then
+		if [[ $flag == on ]]; then
+			xdo lower -N Bar
+		else
+			xdo raise -N Bar
+		fi
+	fi
+done &

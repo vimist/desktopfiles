@@ -1,0 +1,8 @@
+# Standard feh settings
+feh \
+	--edit \
+	--scale-down \
+	--geometry 1024x768 \
+	--draw-filename \
+	--auto-rotate \
+	--cache-size 24
