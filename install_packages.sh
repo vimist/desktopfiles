@@ -12,7 +12,8 @@ inst_pkg lemonbar
 inst_pkg dmenu
 inst_pkg feh
 inst_pkg xdo
-inst_pkg ncdu     # Disk usage analyser
+inst_pkg alacritty
+inst_pkg ncdu      # Disk usage analyser
 inst_pkg scrot
 
 

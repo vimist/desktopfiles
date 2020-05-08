@@ -45,7 +45,7 @@ function popd() {
 
 # General files
 pushd files
-link bg.png bg.png
+link bg.jpg bg.jpg
 popd
 
 # BSPWM
@@ -67,6 +67,7 @@ link bspwm_modules.py
 link clock_modules.py
 link disk_modules.py
 link sound_modules.py
+link task_modules.py
 popd
 
 # dmenu

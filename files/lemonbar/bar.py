@@ -4,6 +4,7 @@ import bspwm_modules
 import clock_modules
 import disk_modules
 import sound_modules
+import task_modules
 
 
 PADDING = '   '  # Padding
@@ -20,6 +21,8 @@ modules = (
     modules.Const('%{c}'),
     bspwm_modules.Windows('DVI-D-0'),
     modules.Const('%{r}'),
+    task_modules.Count('status:pending'),
+    modules.Const(PADDING),
     disk_modules.DiskUsage('/dev/sda1'),
     modules.Const(PADDING),
     clock_modules.Clock(),

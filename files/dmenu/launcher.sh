@@ -11,12 +11,11 @@ ACTIONS[1]="\uf48d Mount NAS"
 ACTIONS[2]="\uf24b Files (Nemo)"
 ACTIONS[3]="\uf1ee eMail (Geary)"
 ACTIONS[4]="\ufb55 Chat (Messenger)"
-ACTIONS[5]="\uf00b KeePass"
-ACTIONS[6]="\uf0ab Blender"
-ACTIONS[7]="\uf16c Terminal"
-ACTIONS[8]="\uf171 Vim"
-ACTIONS[10]="\uf162 Update"
-ACTIONS[11]="\uf425 Power"
+ACTIONS[5]="\uf0ab Blender"
+ACTIONS[6]="\uf16c Terminal"
+ACTIONS[7]="\uf171 Vim"
+ACTIONS[9]="\uf162 Update"
+ACTIONS[10]="\uf425 Power"
 
 ACTION="$(
 	for ACTION in "${ACTIONS[@]}"; do
