@@ -15,8 +15,9 @@ super + Escape
 	bspc wm --restart; \
 	dunstify 'Restarted' 'Window manager restarted'
 
+# Pass autotype
 ctrl + alt + a
-	"$HOME/.config/scripts/window_autotype.sh"
+	"$HOME/bin/window_autotype"
 
 # Screenshot
 @Print
