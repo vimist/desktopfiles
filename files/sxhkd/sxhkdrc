@@ -30,9 +30,6 @@ super + c
 	bspc rule --add '*' --one-shot state=floating rectangle=300x400+0+0 center=true && \
 	alacritty --command python3 -iqc 'from math import *'
 
-# Lock the screen
-# super + l
-# 	slock
 
 #
 # bspwm hotkeys
