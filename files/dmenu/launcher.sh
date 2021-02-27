@@ -1,8 +1,9 @@
 #! /bin/sh
 
-BIN_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+THIS_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-source "$BIN_DIR/base.sh"
+source "$THIS_DIR/base.sh"
+source "$HOME/.bash/functions.sh"
 
 
 declare -a ACTIONS
@@ -31,7 +32,7 @@ case "$ACTION" in
 		firefox
 		;;
 	*Mount\ NAS)
-		alacritty --command mount "$HOME/DNAS/Main"
+		run_in_terminal mount "$HOME/DNAS/Main"
 		;;
 	*Files*)
 		nemo
@@ -48,18 +49,23 @@ case "$ACTION" in
 	*Blender)
 		blender
 		;;
+	*NewsBoat)
+		run_in_terminal newsboat
+		;;
 	*Terminal)
 		alacritty
 		;;
+	*Steam)
+		steam
+		;;
 	*Vim)
-		alacritty --command vim
+		run_in_terminal vim
 		;;
 	*Update)
-		alacritty --command "$HOME/.config/scripts/system_update.sh"
+		run_in_terminal "$HOME/bin/system_update.sh"
 		;;
 	*Power)
-		echo "$BIN_DIR"
-		"$BIN_DIR/power.sh"
+		"$THIS_DIR/power.sh"
 		;;
 	*)
 		$ACTION
