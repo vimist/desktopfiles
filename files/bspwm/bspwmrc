@@ -33,7 +33,7 @@ pkill -x sxhkd
 sxhkd &
 
 pkill -x lemonbar
-python3 "$HOME/.config/lemonbar/bar.py"
+python3 "$HOME/.config/lemonbar/bar.py" &
 
 
 # Make sure Lemonbar sits under full screen windows
