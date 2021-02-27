@@ -25,7 +25,8 @@ ctrl + alt + a
 	xclip -selection clipboard -target image/png /tmp/screenshot.png && \
 	dunstify 'Screenshot' "Saved in '/tmp/screenshot.png' and copied to the clipboard"
 
-XF86Calculator
+# Calculator
+super + c
 	bspc rule --add '*' --one-shot state=floating rectangle=300x400+0+0 center=true && \
 	alacritty --command python3 -iqc 'from math import *'
 
