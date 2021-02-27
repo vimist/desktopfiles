@@ -5,6 +5,7 @@ import clock_modules
 import disk_modules
 import sound_modules
 import task_modules
+import media_modules
 
 
 PADDING = '   '  # Padding
@@ -33,6 +34,8 @@ modules = (
     modules.Const('%{c}'),
     bspwm_modules.Windows('DP-1'),
     modules.Const('%{r}'),
+    media_modules.MediaControls(),
+    modules.Const(PADDING),
     sound_modules.Volume('Master'),
 )
 
