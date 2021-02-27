@@ -36,6 +36,22 @@ super + p
 	echo -n "$COLOUR" | xclip -selection clipboard && \
 	dunstify "Colour Picker" "$COLOUR"
 
+# Mouse control
+#KP_Up
+#	xdotool mousemove_relative -- 0 -1
+#
+#KP_Down
+#	xdotool mousemove_relative -- 0 1
+#
+#KP_Left
+#	xdotool mousemove_relative -- -1 0
+#
+#KP_Right
+#	xdotool mousemove_relative -- 1 0
+#
+#KP_Begin
+#	xdotool click 1
+
 #
 # bspwm hotkeys
 #
