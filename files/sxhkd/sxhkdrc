@@ -30,6 +30,11 @@ super + c
 	bspc rule --add '*' --one-shot state=floating rectangle=300x400+0+0 center=true && \
 	alacritty --command python3 -iqc 'from math import *'
 
+# Colour picker
+super + p
+	COLOUR="$(colorpicker --one-shot --preview | sed -r 's/^.+ Hex: //')" && \
+	echo -n "$COLOUR" | xclip -selection clipboard && \
+	dunstify "Colour Picker" "$COLOUR"
 
 #
 # bspwm hotkeys
