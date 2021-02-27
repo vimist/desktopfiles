@@ -18,14 +18,20 @@ class DiskUsage(lemonbar_manager.Module):
 
     def output(self):
         process = sp.run(
-            ['df', '-h', '-P', self._disk],
+            ['df', f'--output=avail,pcent', self._disk],
             capture_output=True, encoding='UTF-8')
 
-        headers, values = process.stdout.strip().split('\n')
+        _, values = process.stdout.strip().split('\n')
+        available, used = [int(v.strip('%')) for v in values.split(' ') if v]
 
-        headers = [h.strip().lower() for h in headers.split(' ') if h]
-        values = [v for v in values.split(' ') if v]
+        template = '\uF2CA {}G'
 
-        fields = {h: v for h, v in zip(headers, values)}
+        if used > 90:
+            template = (
+                '%{{B#CF6A4C}} %{{F#111111}} '
+                + template +
+                ' %{{F-}}  %{{B-}}'
+            )
 
-        return '\uF2CA {avail}'.format(**fields)
+        return template.format(round(available / 1024 / 1024, 1))
+
