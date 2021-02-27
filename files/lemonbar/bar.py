@@ -12,7 +12,7 @@ PADDING = '   '  # Padding
 
 
 #import logging
-#logging.basicConfig(level=logging.INFO)
+#logging.basicConfig(level=logging.INFO, filename='/tmp/lemonbar.log')
 
 
 # Define the modules to put on the bar (in order)
