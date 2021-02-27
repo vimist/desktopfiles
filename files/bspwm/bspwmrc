@@ -5,7 +5,6 @@ cd "$(dirname $0)"
 
 pkill -x bspc  # Ensure all bspc commands have stopped
 
-
 bspc monitor DVI-D-0 -d 1 2 3 4 5
 bspc monitor DP-1    -d 6 7 8 9 0
 
@@ -23,7 +22,6 @@ bspc config normal_border_color  '#000000'
 
 # Window Rules
 
-bspc rule --add feh state=floating center
 bspc config external_rules_command "$PWD/external_rules_command.sh"
 
 
