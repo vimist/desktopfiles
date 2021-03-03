@@ -63,7 +63,7 @@ case "$ACTION" in
 		run_in_terminal vim
 		;;
 	*Update)
-		run_in_terminal "$HOME/bin/system_update.sh"
+		run_in_terminal "$HOME/bin/system-update"
 		;;
 	*Power)
 		"$THIS_DIR/power.sh"

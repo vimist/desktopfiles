@@ -17,24 +17,19 @@ super + Escape
 
 # Pass autotype
 ctrl + alt + a
-	"$HOME/bin/window_autotype"
+	"$HOME/bin/window-autotype"
 
 # Screenshot
 @Print
-	scrot -so /tmp/screenshot.png && \
-	xclip -selection clipboard -target image/png /tmp/screenshot.png && \
-	dunstify 'Screenshot' "Saved in '/tmp/screenshot.png' and copied to the clipboard"
+	"$HOME/bin/screenshot"
 
 # Calculator
 super + c
-	bspc rule --add '*' --one-shot state=floating rectangle=300x400+0+0 center=true && \
-	alacritty --command python3 -iqc 'from math import *'
+	alacritty --title Calculator --command python3 -iqc 'from math import *'
 
 # Colour picker
 super + p
-	COLOUR="$(colorpicker --one-shot --preview | sed -r 's/^.+ Hex: //')" && \
-	echo -n "$COLOUR" | xclip -selection clipboard && \
-	dunstify "Colour Picker" "$COLOUR"
+	"$HOME/bin/colour-picker"
 
 # Mouse control
 #KP_Up

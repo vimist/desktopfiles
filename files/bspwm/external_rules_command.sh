@@ -7,13 +7,15 @@ TITLE="$(xtitle "$WID")"
 
 
 if [[ "$CLASS" = "Blender" && "$TITLE" = "Blender Preferences" ]]; then
-	echo 'state=floating center'
+	echo 'state=floating center=on'
 elif [[ "$CLASS" = "Steam" && "$TITLE" != "Steam" ]]; then
-	echo 'state=floating center'
+	echo 'state=floating center=on'
 elif [[ "$CLASS" = "feh" ]]; then
-	echo 'state=pseudo_tiled center'
+	echo 'state=pseudo_tiled center=on'
 elif [[ "$CLASS" = "mpv" ]]; then
-	echo 'state=pseudo_tiled center'
+	echo 'state=pseudo_tiled center=on'
+elif [[ "$TITLE" = "Calculator" ]]; then
+	echo 'state=floating rectangle=300x400+0+0 center=on'
 fi
 
 # Debug - `tail -f /tmp/bspwm_rules_script`

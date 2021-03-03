@@ -1,4 +1,4 @@
-#! /bin/bash
+#! /bin/sh
 
 TITLE="$(xdotool getwindowname $(xdotool getactivewindow))"
 
