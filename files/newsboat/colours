@@ -1,0 +1,12 @@
+color	listfocus	color240	color234
+color	listnormal	color240	default
+color	listnormal_unread	white	default
+color	listfocus_unread	white	color234
+
+color	end-of-text-marker	default	default	invis
+
+
+search-highlight-colors	black	yellow
+
+
+highlight	article	"^(Feed|Title|Date|Links?|Podcast Download URL):"	blue	default

@@ -1,0 +1,17 @@
+# include other config files
+include	~/.config/newsboat/key_bindings
+include	~/.config/newsboat/colours
+
+# General config
+browser open_url
+
+reload-threads	10
+
+refresh-on-startup	yes
+
+show-title-bar	no
+show-keymap-hint	no
+
+scrolloff	5
+
+cleanup-on-quit	yes

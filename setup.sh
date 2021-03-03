@@ -108,5 +108,13 @@ link screenshot.sh "$HOME/bin/screenshot"
 link colour_picker.sh "$HOME/bin/colour-picker"
 popd
 
+# Newsboat
+pushd files/newsboat
+link config "$HOME/.config/newsboat/config"
+link urls "$HOME/.config/newsboat/urls"
+link colours "$HOME/.config/newsboat/colours"
+link key_bindings "$HOME/.config/newsboat/key_bindings"
+popd
+
 echo
 echo "Done!"

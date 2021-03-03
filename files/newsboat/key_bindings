@@ -1,0 +1,43 @@
+# Clear all key bindings
+unbind-key -a
+
+bind-key	?	help
+
+bind-key	e	edit-urls
+
+bind-key	q	quit
+bind-key	r	reload
+bind-key	R	reload-all
+bind-key	o	open
+bind-key	ENTER	open
+bind-key	0	open-in-browser-and-mark-read
+bind-key	SPACE	toggle-article-read
+bind-key	b	bookmark
+
+bind-key	j	down
+bind-key	DOWN	down
+bind-key	k	up
+bind-key	UP	up
+bind-key	^D	pagedown
+bind-key	^U	pageup
+bind-key	g	home
+bind-key	HOME	home
+bind-key	G	end
+bind-key	END	end
+
+bind-key	J	next
+bind-key	K	prev
+
+bind-key	/	open-search
+bind-key	"#"	set-tag
+bind-key	:	cmdline
+
+bind-key	1	one
+bind-key	2	two
+bind-key	3	three
+bind-key	4	four
+bind-key	5	five
+bind-key	6	six
+bind-key	7	seven
+bind-key	8	eight
+bind-key	9	nine
