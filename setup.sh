@@ -104,6 +104,7 @@ pushd files/scripts
 link window_autotype.sh "$HOME/bin/window-autotype"
 link system_update.sh "$HOME/bin/system-update"
 link shutdown_nas.sh "$HOME/bin/shutdown-nas"
+link open_url.sh "$HOME/bin/open-url"
 link screenshot.sh "$HOME/bin/screenshot"
 link colour_picker.sh "$HOME/bin/colour-picker"
 popd
