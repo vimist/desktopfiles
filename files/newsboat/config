@@ -3,7 +3,7 @@ include	~/.config/newsboat/key_bindings
 include	~/.config/newsboat/colours
 
 # General config
-browser open_url
+browser open-url
 
 reload-threads	10
 
