@@ -6,6 +6,7 @@ bind-key	?	help
 bind-key	e	edit-urls
 
 bind-key	q	quit
+bind-key	ESC	quit
 bind-key	r	reload
 bind-key	R	reload-all
 bind-key	o	open
