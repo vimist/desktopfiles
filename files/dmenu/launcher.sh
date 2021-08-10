@@ -7,17 +7,18 @@ source "$HOME/.bash/functions.sh"
 
 
 declare -a ACTIONS
-ACTIONS[0]="\uf239 Internet (Firefox)"
-ACTIONS[1]="\uf48d Mount NAS"
-ACTIONS[2]="\uf24b Files (Nemo)"
-ACTIONS[3]="\uf1ee eMail (Geary)"
-ACTIONS[4]="\ufb55 Chat (Messenger)"
-ACTIONS[5]="\uf0ab Blender"
-ACTIONS[6]="\uf16c Terminal"
-ACTIONS[6]="\uf4d3 Steam"
-ACTIONS[7]="\uf171 Vim"
-ACTIONS[9]="\uf162 Update"
-ACTIONS[10]="\uf425 Power"
+ACTIONS+=("\uf239 Internet (Firefox)")
+ACTIONS+=("\uf48d Mount NAS")
+ACTIONS+=("\uf24b Files (Nemo)")
+ACTIONS+=("\uf1ee eMail (Mailspring)")
+ACTIONS+=("\ufb55 Chat (Messenger)")
+ACTIONS+=("\uf0ab Blender")
+ACTIONS+=("\uf16c Terminal")
+ACTIONS+=("\uf46b RSS (NewsBoat)")
+ACTIONS+=("\uf4d3 Steam")
+ACTIONS+=("\uf171 Vim")
+ACTIONS+=("\uf162 Update")
+ACTIONS+=("\uf425 Power")
 
 ACTION="$(
 	for ACTION in "${ACTIONS[@]}"; do
