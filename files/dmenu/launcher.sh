@@ -28,37 +28,35 @@ ACTION="$(
 
 
 cd "$HOME"
+export PATH="$PATH:$HOME/bin"
 
 case "$ACTION" in
 	*Internet*)
-		firefox
+		exec firefox
 		;;
 	*Mount\ NAS)
 		run_in_terminal mount "$HOME/DNAS/Main"
 		;;
 	*Files*)
-		nemo
+		exec nemo
 		;;
 	*Mail*)
-		geary
+		exec mailspring
 		;;
 	*Chat*)
-		firefox --new-window 'https://messenger.com'
-		;;
-	*KeePass)
-		keepass
+		exec firefox --new-window 'https://messenger.com'
 		;;
 	*Blender)
-		blender
+		exec blender
 		;;
-	*NewsBoat)
+	*RSS*)
 		run_in_terminal newsboat
 		;;
 	*Terminal)
-		alacritty
+		exec alacritty
 		;;
 	*Steam)
-		steam
+		exec steam
 		;;
 	*Vim)
 		run_in_terminal vim
@@ -67,9 +65,9 @@ case "$ACTION" in
 		run_in_terminal "$HOME/bin/system-update"
 		;;
 	*Power)
-		"$THIS_DIR/power.sh"
+		exec "$THIS_DIR/power.sh"
 		;;
 	*)
-		$ACTION
+		exec $ACTION
 		;;
 esac

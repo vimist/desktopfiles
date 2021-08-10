@@ -19,15 +19,12 @@ ACTION=$(
 
 case "$ACTION" in
 	*Shutdown)
-		shutdown now
+		exec shutdown now
 		;;
 	*Suspend)
-		systemctl suspend
-		;;
-	*Logout)
-		bspc quit
+		exec systemctl suspend
 		;;
 	*Restart)
-		reboot
+		exec reboot
 		;;
 esac
