@@ -26,9 +26,6 @@ fi
 PRETTY_ENTRY="${ENTRY//\// \/ }"
 
 ACTION_PROPERTY="$((
-	echo "View $PRETTY_ENTRY"
-	echo "Edit $PRETTY_ENTRY"
-
 	while read FUNCTION; do
 		echo "Run $FUNCTION"
 	done < <(pass list-functions "$ENTRY")
@@ -37,6 +34,8 @@ ACTION_PROPERTY="$((
 		echo "Type $PROPERTY"
 	done < <(pass list-properties "$ENTRY")
 
+	echo "View $PRETTY_ENTRY"
+	echo "Edit $PRETTY_ENTRY"
 ) | dmenu -sf "$COLOUR" -p "$PRETTY_ENTRY")"
 
 
