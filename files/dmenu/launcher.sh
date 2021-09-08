@@ -35,7 +35,7 @@ case "$ACTION" in
 		exec firefox
 		;;
 	*Mount\ NAS)
-		run_in_terminal mount "$HOME/DNAS/Main"
+		run_in_terminal mount "$HOME/DNAS"
 		;;
 	*Files*)
 		exec nemo
