@@ -32,6 +32,9 @@ feh --bg-fill --no-fehbg --no-xinerama "$HOME/.config/bg.jpg"
 pkill -x sxhkd
 sxhkd &
 
+pkill -x dunst
+dunst &
+
 pkill -x lemonbar
 python3 "$HOME/.config/lemonbar/bar.py" &
 
