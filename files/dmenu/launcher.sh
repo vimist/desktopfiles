@@ -3,7 +3,6 @@
 THIS_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 source "$THIS_DIR/base.sh"
-source "$HOME/.bash/functions.sh"
 
 
 declare -a ACTIONS
@@ -35,7 +34,7 @@ case "$ACTION" in
 		exec firefox
 		;;
 	*Mount\ NAS)
-		run_in_terminal mount "$HOME/DNAS"
+		run_in_terminal "Mount NAS" mount "$HOME/DNAS"
 		;;
 	*Files*)
 		exec nemo
@@ -50,7 +49,7 @@ case "$ACTION" in
 		exec blender
 		;;
 	*RSS*)
-		run_in_terminal newsboat
+		run_in_terminal "Newsboat" newsboat
 		;;
 	*Terminal)
 		exec alacritty
@@ -59,10 +58,10 @@ case "$ACTION" in
 		exec steam
 		;;
 	*Vim)
-		run_in_terminal vim
+		run_in_terminal Vim vim
 		;;
 	*Update)
-		run_in_terminal "$HOME/bin/system-update"
+		run_in_terminal "System Update" "$HOME/bin/system-update"
 		;;
 	*Power)
 		exec "$THIS_DIR/power.sh"

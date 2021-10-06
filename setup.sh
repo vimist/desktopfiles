@@ -107,6 +107,7 @@ link shutdown_nas.sh "$HOME/bin/shutdown-nas"
 link open_url.sh "$HOME/bin/open-url"
 link screenshot.sh "$HOME/bin/screenshot"
 link colour_picker.sh "$HOME/bin/colour-picker"
+link run_in_terminal.sh "$HOME/bin/run-in-terminal"
 popd
 
 # Newsboat
