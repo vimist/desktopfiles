@@ -5,9 +5,10 @@ BIN_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 source "$BIN_DIR/base.sh"
 
 declare -a ACTIONS
-ACTIONS[0]="\uf425 Shutdown"
-ACTIONS[1]="\uf903 Suspend"
-ACTIONS[4]="\uf708 Restart"
+ACTIONS+=("\uf425 Shutdown (PC & NAS)")
+ACTIONS+=("\uf425 Shutdown")
+ACTIONS+=("\uf903 Suspend")
+ACTIONS+=("\uf708 Restart")
 
 
 ACTION=$(
@@ -18,13 +19,16 @@ ACTION=$(
 
 
 case "$ACTION" in
+	*Shutdown*NAS*)
+		shutdown-nas
+		;&
 	*Shutdown)
-		exec shutdown now
+		exec systemctl poweroff
 		;;
 	*Suspend)
 		exec systemctl suspend
 		;;
 	*Restart)
-		exec reboot
+		exec systemctl reboot
 		;;
 esac
