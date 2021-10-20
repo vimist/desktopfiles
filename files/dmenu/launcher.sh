@@ -34,7 +34,7 @@ case "$ACTION" in
 		exec firefox
 		;;
 	*Mount\ NAS)
-		run_in_terminal "Mount NAS" mount "$HOME/DNAS"
+		run-in-terminal "Mount NAS" mount "$HOME/DNAS"
 		;;
 	*Files*)
 		exec nemo
@@ -49,7 +49,7 @@ case "$ACTION" in
 		exec blender
 		;;
 	*RSS*)
-		run_in_terminal "Newsboat" newsboat
+		run-in-terminal "Newsboat" newsboat
 		;;
 	*Terminal)
 		exec alacritty
@@ -58,10 +58,10 @@ case "$ACTION" in
 		exec steam
 		;;
 	*Vim)
-		run_in_terminal Vim vim
+		run-in-terminal Vim vim
 		;;
 	*Update)
-		run_in_terminal "System Update" "$HOME/bin/system-update"
+		run-in-terminal "System Update" "$HOME/bin/system-update"
 		;;
 	*Power)
 		exec "$THIS_DIR/power.sh"
