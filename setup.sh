@@ -108,6 +108,8 @@ link open_url.sh "$HOME/bin/open-url"
 link screenshot.sh "$HOME/bin/screenshot"
 link colour_picker.sh "$HOME/bin/colour-picker"
 link run_in_terminal.sh "$HOME/bin/run-in-terminal"
+
+ln -s "$(which feh)" "$HOME/bin/thumbs"
 popd
 
 # Newsboat

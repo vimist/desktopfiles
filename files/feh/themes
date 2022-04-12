@@ -6,3 +6,13 @@ feh \
 	--draw-filename \
 	--auto-rotate \
 	--cache-size 24
+
+
+# Thumbnail viewer
+thumbs \
+	--thumbnail \
+	--index-info '' \
+	--thumb-width 200 \
+	--thumb-height 200 \
+	--geometry 1024x768 \
+	--limit-width 1024
