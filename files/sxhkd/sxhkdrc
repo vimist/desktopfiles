@@ -68,7 +68,7 @@ super + a
 
 # Toggle the window sticky
 super + s
-	bspc node --flag ~sticky
+	bspc node --flag sticky
 
 # Toggle the window floating
 super + f
