@@ -69,6 +69,11 @@ pushd files/sxhkd
 link sxhkdrc
 popd
 
+# Alacritty
+pushd files/alacritty/
+link alacritty.yml
+popd
+
 # Lemonbar
 pushd files/lemonbar
 link bar.py
