@@ -43,4 +43,14 @@ pushd /tmp
     popd
 
     rm -Rf xtmon
+
+    # Install dragon
+    git clone https://github.com/mwh/dragon
+
+    pushd dragon
+        make
+        sudo make -n PREFIX=/usr/local install
+    popd
+
+    rm -Rf colorpicker
 popd
