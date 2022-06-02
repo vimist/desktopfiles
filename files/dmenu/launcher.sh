@@ -15,6 +15,7 @@ ACTIONS+=("\uf0ab Blender")
 ACTIONS+=("\uf16c Terminal")
 ACTIONS+=("\uf46b RSS (NewsBoat)")
 ACTIONS+=("\uf4d3 Steam")
+ACTIONS+=("\uf1c5 Virt-Manager")
 ACTIONS+=("\uf171 Vim")
 ACTIONS+=("\uf162 Update")
 ACTIONS+=("\uf425 Power")
@@ -56,6 +57,9 @@ case "$ACTION" in
 		;;
 	*Steam)
 		exec steam
+		;;
+	*Virt-Manager)
+		exec virt-manager
 		;;
 	*Vim)
 		run-in-terminal Vim vim
