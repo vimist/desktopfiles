@@ -11,9 +11,9 @@ if [[ "$CLASS" = "Blender" && "$TITLE" = "Blender Preferences" ]]; then
 elif [[ "$CLASS" = "Steam" && "$TITLE" != "Steam" ]]; then
 	echo 'state=floating center=on'
 elif [[ "$CLASS" = "feh" ]]; then
-	echo 'state=pseudo_tiled center=on'
+	echo 'state=floating center=on'
 elif [[ "$CLASS" = "mpv" ]]; then
-	echo 'state=pseudo_tiled center=on'
+	echo 'state=floating center=on'
 elif [[ "$CLASS" = "Alacritty" && "$TITLE" = "Mount NAS" ]]; then
 	echo 'state=floating rectangle=500x100+0+0 center=on'
 elif [[ "$CLASS" = "Alacritty" && "$TITLE" = "Calculator" ]]; then
