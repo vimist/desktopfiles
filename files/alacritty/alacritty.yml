@@ -23,7 +23,7 @@ colors:
     foreground: '0xADADAD'
 
   cursor:
-    text: '0xADADAD'
+    text: '0x0A0A0A'
     cursor: '0xADADAD'
 
   normal:
