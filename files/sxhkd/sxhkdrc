@@ -74,6 +74,10 @@ super + s
 super + f
 	bspc node --state ~floating
 
+# Rotate the window 90 degrees
+super + r
+	bspc node first_ancestor --rotate 90
+
 # Focus the node in the given direction
 super + {h,j,k,l}
 	bspc node --focus {west,south,north,east}
