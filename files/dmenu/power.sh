@@ -5,10 +5,10 @@ BIN_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 source "$BIN_DIR/base.sh"
 
 declare -a ACTIONS
-ACTIONS+=("\uf425 Shutdown (PC & NAS)")
-ACTIONS+=("\uf425 Shutdown")
-ACTIONS+=("\uf903 Suspend")
-ACTIONS+=("\uf708 Restart")
+ACTIONS+=("\U000F0425 Shutdown (PC & NAS)")
+ACTIONS+=("\U000F0425 Shutdown")
+ACTIONS+=("\U000F0904 Suspend")
+ACTIONS+=("\U000F0709 Restart")
 
 
 ACTION=$(

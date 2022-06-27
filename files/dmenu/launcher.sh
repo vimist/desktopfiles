@@ -6,19 +6,19 @@ source "$THIS_DIR/base.sh"
 
 
 declare -a ACTIONS
-ACTIONS+=("\uf239 Internet (Firefox)")
-ACTIONS+=("\uf48d Mount NAS")
-ACTIONS+=("\uf24b Files (Nemo)")
-ACTIONS+=("\uf1ee eMail (Mailspring)")
-ACTIONS+=("\ufb55 Chat (Messenger)")
-ACTIONS+=("\uf0ab Blender")
-ACTIONS+=("\uf16c Terminal")
-ACTIONS+=("\uf46b RSS (NewsBoat)")
-ACTIONS+=("\uf4d3 Steam")
-ACTIONS+=("\uf1c5 Virt-Manager")
-ACTIONS+=("\uf171 Vim")
-ACTIONS+=("\uf162 Update")
-ACTIONS+=("\uf425 Power")
+ACTIONS+=("\U000F0239 Internet (Firefox)")
+ACTIONS+=("\U000F048D Mount NAS")
+ACTIONS+=("\U000F024B Files (Nemo)")
+ACTIONS+=("\U000F01EE eMail (Mailspring)")
+ACTIONS+=("\U000F0B79 Chat (Messenger)")
+ACTIONS+=("\U000F00AB Blender")
+ACTIONS+=("\U000F018D Terminal")
+ACTIONS+=("\U000F046B RSS (NewsBoat)")
+ACTIONS+=("\U000F04D3 Steam")
+ACTIONS+=("\U000F01C5 Virt-Manager")
+ACTIONS+=("\U000F0171 Vim")
+ACTIONS+=("\U000f0162 Update")
+ACTIONS+=("\U000f0425 Power")
 
 ACTION="$(
 	for ACTION in "${ACTIONS[@]}"; do
