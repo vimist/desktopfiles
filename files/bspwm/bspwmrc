@@ -29,6 +29,8 @@ bspc config external_rules_command "$PWD/external_rules_command.sh"
 
 feh --bg-fill --no-fehbg --no-xinerama "$HOME/.config/bg.jpg"
 
+xsetroot -cursor_name left_ptr  # Set the cursor for the x root
+
 pkill -x sxhkd
 sxhkd &
 
