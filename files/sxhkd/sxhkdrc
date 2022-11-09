@@ -23,6 +23,10 @@ ctrl + alt + a
 @Print
 	"$HOME/bin/screenshot"
 
+# Make GIF animation
+@ctrl + Print
+	"$HOME/bin/screenanim"
+
 # Calculator
 super + c
 	run-in-terminal Calculator python3 -iqc 'from math import *'
