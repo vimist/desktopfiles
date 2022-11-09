@@ -13,8 +13,6 @@ font:
     family: JetBrains Mono
     style: regular
 
-  use_thin_strokes: true
-
 draw_bold_text_with_bright_colors: false
 
 colors:
