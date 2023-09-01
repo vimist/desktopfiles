@@ -92,7 +92,7 @@ super + shift + {h,j,k,l}
 
 # Focus the next node
 alt + Tab
-	bspc node --focus next.local
+	bspc node --focus next.local.window
 
 # Focus the given desktop
 super + {1-9,0}
