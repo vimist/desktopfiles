@@ -71,7 +71,7 @@ popd
 
 # Alacritty
 pushd files/alacritty/
-link alacritty.yml
+link alacritty.toml
 popd
 
 # Lemonbar

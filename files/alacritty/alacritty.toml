@@ -1,0 +1,46 @@
+live_config_reload = true
+
+[colors]
+draw_bold_text_with_bright_colors = false
+
+[colors.primary]
+background = "0x0A0A0A"
+foreground = "0xADADAD"
+
+[colors.cursor]
+cursor = "0xADADAD"
+text = "0x0A0A0A"
+
+[colors.bright]
+black = "0x0A0A0A"
+blue = "0x597BC5"
+cyan = "0x71B9F8"
+green = "0x99AD6A"
+magenta = "0xA037B0"
+red = "0xCF6A4C"
+white = "0xADADAD"
+yellow = "0xD8AD4C"
+
+[colors.normal]
+black = "0x0A0A0A"
+blue = "0x597BC5"
+cyan = "0x71B9F8"
+green = "0x99AD6A"
+magenta = "0xA037B0"
+red = "0xCF6A4C"
+white = "0xADADAD"
+yellow = "0xD8AD4C"
+
+[font]
+size = 9.5
+
+[font.normal]
+family = "JetBrains Mono"
+style = "regular"
+
+[scrolling]
+history = 10000
+
+[window]
+dynamic_padding = true
+dynamic_title = true
