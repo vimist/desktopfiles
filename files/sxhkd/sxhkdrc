@@ -27,6 +27,10 @@ ctrl + alt + a
 @ctrl + Print
 	"$HOME/bin/screenanim"
 
+# Copy text from screenshot
+@alt + Print
+	"$HOME/bin/screenshot_ocr"
+
 # Calculator
 super + c
 	run-in-terminal Calculator python3 -iqc 'from math import *'
